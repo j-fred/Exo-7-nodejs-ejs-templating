@@ -1,0 +1,42 @@
+[
+    {
+        "name":"Javascript",
+        "level": 2
+    },
+    {
+        "name":"HTML",
+        "level": 6
+    },
+    {
+        "name":"CSS",
+        "level": 6
+    },
+    {
+        "name":"NodeJS",
+        "level": 3
+    },
+    {
+        "name":"PHP",
+        "level": 1
+    },
+    {
+        "name":"Paint",
+        "level": 3
+    },
+    {
+        "name":"Photoshop",
+        "level": 5
+    },
+    {
+        "name":"Illustrator",
+        "level": 4
+    },
+    {
+        "name":"Paint",
+        "level": 2
+    },
+    {
+        "name":"SQL",
+        "level": 3
+    }
+]

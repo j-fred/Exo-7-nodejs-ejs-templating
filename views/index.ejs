@@ -1,0 +1,30 @@
+<% include head.ejs %>
+<main class="container d-flex justify-content-center align-items-center" >
+<h1 class="mr-5">Mes compétences </h1>
+<ul class=" w-50 list-group list-group-flush">
+
+<% competences.sort(function (a, b) {
+    return b.level - a.level;
+});
+competences.forEach(function(datas){ %>
+    <li class="list-group-item">
+    <div class="row">
+        <div class="col-6 text-left"><%= datas.name %></div>
+        <div id="stars" class="col-6 text-right">
+            <% for(var i=0; i<datas.level; i++) {%>
+                <% if (datas.level < 3) { %>
+                    <i class="fas fa-star rouge"></i>
+                <% } else if (datas.level > 4) { %>
+                    <i class="fas fa-star vert-fonce"></i>
+                <% } else { %>
+                        <i class="fas fa-star vert-clair"></i>
+                <% } %>
+            <% }; %>
+        </div>
+    </div>
+</li>
+<% }); %>
+</ul>
+</main>
+<% include footer.ejs %>
+
