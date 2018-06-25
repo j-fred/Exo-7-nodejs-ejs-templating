@@ -10,14 +10,14 @@ competences.forEach(function(datas){ %>
     <li class="list-group-item">
     <div class="row">
         <div class="col-6 text-left"><%= datas.name %></div>
-        <div id="stars" class="col-6 text-right">
-            <% for(var i=0; i<datas.level; i++) {%>
+        <div class="col-6 text-right">
+            <% for(var i=0; i<datas.level; i++) { %>
                 <% if (datas.level < 3) { %>
                     <i class="fas fa-star rouge"></i>
                 <% } else if (datas.level > 4) { %>
                     <i class="fas fa-star vert-fonce"></i>
                 <% } else { %>
-                        <i class="fas fa-star vert-clair"></i>
+                    <i class="fas fa-star vert-clair"></i>
                 <% } %>
             <% }; %>
         </div>

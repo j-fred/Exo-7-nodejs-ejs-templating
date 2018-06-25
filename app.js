@@ -6,7 +6,7 @@ const request = require('request');
 
 
 //app.use(express.json());
-app.use(express.static('static'));
+app.use(express.static('public'));
 
 // utilisation du moteur de rendu ejs
 app.set('view engine', 'ejs');
